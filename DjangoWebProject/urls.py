@@ -13,7 +13,10 @@ from app.forms import BootstrapAuthenticationForm
 
 urlpatterns = patterns('',
     # Examples:
+    'django.contrib.staticfiles.views',
     url(r'^$', 'app.views.home', name='home'),
+    url(r'^(?:index.html)?$', 'serve', kwargs={'path': 'index.html'}),
+    url(r'^(?P<path>(?:js|css|img)/.*)$', 'serve'),
     url(r'^contact$', 'app.views.contact', name='contact'),
     url(r'^about', 'app.views.about', name='about'),
     url(r'^login/$',
