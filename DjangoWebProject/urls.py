@@ -14,7 +14,7 @@ from app.forms import BootstrapAuthenticationForm
 urlpatterns = patterns(
     # Examples:
     '',
-    url(r'^static/(?P.*)$', 'app.views.static.serve',{'document_root':'settings.MEDIA_ROOT'}),
+    (r'^static/(?P.*)$', 'app.views.static.serve',{'document_root':'settings.MEDIA_ROOT'}),
     url(r'^$', 'app.views.home', name='home'),
     url(r'^contact$', 'app.views.contact', name='contact'),
     url(r'^about', 'app.views.about', name='about'),
