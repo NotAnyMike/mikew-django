@@ -1,0 +1,55 @@
+{
+    "title" : "Test title to know how this this behaves",
+    "name_fixed" : "Test-title-to-know-how-this-this-behaves",
+    "body" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Lorem ipsum",
+    "date" :  "June 12th, 2016",
+    "cover" : "/img/cover.png",
+    "cover_big" : "/img/cover_big.png",
+    "techs_used" : [
+        {
+            "img" : "img/polymer.png"
+        },
+        {
+            "img" : "img/gwt.png"
+        },
+        {
+            "img" : "img/react.png"
+        },
+        {
+            "img" : "img/bower.png"
+        },
+        {
+            "img" : "img/bower.png"
+        },
+        {
+            "img" : "img/bower.png"
+        },
+        {
+            "img" : "img/gwt.png"
+        },
+        {
+            "img" : "img/gwt.png"
+        },
+        {
+            "img" : "img/gwt.png"
+        },
+        {
+            "img" : "img/gwt.png"
+        },
+        {
+            "img" : "img/gwt.png"
+        }
+    ],
+    "comments" : [
+        {
+            "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint, officiis maxime reprehenderit aperiam, facere, voluptatem id rem minus illo atque iusto iure amet omnis perferendis illum veniam at, delectus.",
+            "date" : "June 27th, 2015",
+            "author" : "Mike W"
+        },
+        {
+            "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint, officiis maxime reprehenderit aperiam, facere, voluptatem id rem minus illo atque iusto iure amet omnis perferendis illum veniam at, delectus.",
+            "date" : "June 27th, 2015",
+            "author" : "Mike W"
+        }
+    ]
+}

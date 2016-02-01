@@ -1,0 +1,20 @@
+{
+    "projects" : [
+        {
+            "title" : "Test title to know how this this behaves",
+            "name_fixed" : "Test-title-to-know-how-this-this-behaves",
+            "abstract" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nulla distinctio, iusto quod, blanditiis beatae aut magnam, culpa corporis in cupiditate. Dolorum harum ex maiores perspiciatis, corrupti, aut quia illo!",
+            "date" :  "June 12th, 2016",
+            "img" : "/img/project1.png",
+            "img_big" : "/img/project1_big.png"
+        },
+        {
+            "title" : "Test title to know how this this behaves",
+            "name_fixed" : "Test-title-to-know-how-this-this-behaves",
+            "abstract" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nulla distinctio, iusto quod, blanditiis beatae aut magnam, culpa corporis in cupiditate. Dolorum harum ex maiores perspiciatis, corrupti, aut quia illo!",
+            "date" :  "June 12th, 2016",
+            "img" : "/img/project2.png",
+            "img_big" : "/img/project2_big.png"
+        }
+    ]
+}

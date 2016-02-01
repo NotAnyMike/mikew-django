@@ -1,0 +1,19 @@
+{
+    "title" : "Efficient data fetch with Falcor.js (from Netflix)",
+    "name_fixed" : "Efficient-data-fetch-with-Falcor.js-(from-Netflix)",
+    "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit excepturi incidunt architecto! Veritatis error eligendi eveniet cum delectus dolores autem consequatur, fugit doloremque nesciunt nobis placeat similique et voluptatem natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium totam animi eum quam placeat laboriosam dolor nam consectetur rem non saepe autem, nemo a dolore quas, accusantium voluptate. Non, eum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque asperiores, repellat dolor quae at provident voluptas, debitis nulla distinctio sint maiores. Dolor pariatur accusamus minima culpa dignissimos repudiandae debitis delectus!",
+    "date" : "Jan 12th, 2016",
+    "techs" : [],
+    "comments" : [
+        {
+            "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint, officiis maxime reprehenderit aperiam, facere, voluptatem id rem minus illo atque iusto iure amet omnis perferendis illum veniam at, delectus.",
+            "date" : "June 27th, 2015",
+            "author" : "Mike W"
+        },
+        {
+            "body" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat sint, officiis maxime reprehenderit aperiam, facere, voluptatem id rem minus illo atque iusto iure amet omnis perferendis illum veniam at, delectus.",
+            "date" : "June 27th, 2015",
+            "author" : "Mike W"
+        }
+    ]
+}
