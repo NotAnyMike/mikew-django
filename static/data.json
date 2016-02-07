@@ -1,73 +1,29 @@
 {
-    "myInfo" : {
-        "name" : "Mike Woodcock",
-        "email" : "mikeWoodcockc@gmail.com",
-        "mobile" : "+57 312 553 8143",
-        "facebook_username" : "MikeCrosoft",
-        "twitter_username" : "NotAnyMike",
-        "medium_username" : "Mike.W",
-        "github_username" : "NotAnyMike",
-        "img" : "img/mike.png",
-        "img2x" : "img/mike@2x.png"   
+    "id": 1,
+    "name": "Mike Woodcock",
+    "email": "mikewoodcock@gmail.com",
+    "mobile": "(+57) 312 553 8143",
+    "facebook_username": "test",
+    "twitter_username": "test",
+    "medium_username": "test",
+    "github_username": "test",
+    "img": "img/mike.png",
+    "img2x": "img/mike@2x.png",
+    "interests": "Economics / Maths / Frontend Development",
+    "mantra": {
+        "id": 1,
+        "name": "impossible",
+        "author": "Eleanor Roosevelt",
+        "mantra": "You must do the things you think you cannot do"
     },
-    
-    "interests" : {
-        "body" : "Economics / Maths / Frontend Development"
-    },
-    
-    "mantra" : {
-        "phrase" : "You must do the things you think you cannot do",
-        "author" : "Eleanor Roosevelt"
-    },
-    
-    "techs" : [
+    "techs": [
         {
-            "img" : "img/gwt.png",
-            "name" : "GWT"
+            "name": "GWT",
+            "img": "img/gwt.png"
         },
         {
-            "img" : "img/grunt.png",
-            "name" : "grunt"
-        },
-        {
-            "img" : "img/polymer.png",
-            "name" : "polymer"
-        },
-        {
-            "img" : "img/github.png",
-            "name" : "github"
-        },
-        {
-            "img" : "img/gae.png",
-            "name" : "gae"
-        },
-        {
-            "img" : "img/react.png",
-            "name" : "react"
-        },
-        {
-            "img" : "img/yeoman.png",
-            "name" : "yeoman"
-        },
-        {
-            "img" : "img/backbone.png",
-            "name" : "backbone"
-        },
-        {
-            "img" : "img/bower.png",
-            "name" : "bower"
-        },
-        {
-            "img" : "img/amazon.png",
-            "name" : "amazon web services"
-        },
-        {
-            "img" : "img/google.png",
-            "name" : "google networking"
-        },
-        {
-            "img" : "img/node.png",
-            "name" : "node"
+            "name": "polymer",
+            "img": "img/polymer.png"
         }
     ]
 }

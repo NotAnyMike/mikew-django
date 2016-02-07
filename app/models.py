@@ -8,6 +8,11 @@ class Tech(models.Model):
 	name = models.CharField(max_length=200)
 	img = models.CharField(max_length=200)
 
+class Mantra(models.Model):
+	name = models.CharField(max_length=10)
+	author = models.CharField(max_length=100)
+	mantra = models.CharField(max_length=500)
+
 class Person(models.Model):
 	name = models.CharField(max_length=200)
 	email = models.EmailField()
@@ -19,9 +24,5 @@ class Person(models.Model):
 	img = models.CharField(max_length=100)
 	img2x = models.CharField(max_length=100)
 	interests = models.CharField(max_length=500)
+	mantra = models.ForeignKey(Mantra, blank=True, null=True, on_delete=models.SET_NULL)
 	techs = models.ManyToManyField(Tech)
-
-class Mantra(models.Model):
-	name = models.CharField(max_length=10)
-	author = models.CharField(max_length=100)
-	mantra = models.CharField(max_length=500)
