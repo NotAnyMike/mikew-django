@@ -136,6 +136,7 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'rest_framework',
+    'tinymce',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -181,3 +182,12 @@ REST_FRAMEWORK = {
 		#'rest_framework.permissions.DjangoModelPermissions',
 	]
 }
+
+TINYMCE_DEFAULT_CONFIG = {
+    'theme': "advanced",
+    'cleanup_on_startup': True,
+    'custom_undo_redo_levels': 10,
+}
+
+TINYMCE_SPELLCHECKER = True
+TINYMCE_COMPRESSOR = True
