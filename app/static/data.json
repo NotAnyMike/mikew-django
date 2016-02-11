@@ -1,0 +1,29 @@
+{
+    "id": 1,
+    "name": "Mike Woodcock",
+    "email": "mikewoodcock@gmail.com",
+    "mobile": "(+57) 312 553 8143",
+    "facebook_username": "test",
+    "twitter_username": "test",
+    "medium_username": "test",
+    "github_username": "test",
+    "img": "img/mike.png",
+    "img2x": "img/mike@2x.png",
+    "interests": "Economics / Maths / Frontend Development",
+    "mantra": {
+        "id": 1,
+        "name": "impossible",
+        "author": "Eleanor Roosevelt",
+        "mantra": "You must do the things you think you cannot do"
+    },
+    "techs": [
+        {
+            "name": "GWT",
+            "img": "img/gwt.png"
+        },
+        {
+            "name": "polymer",
+            "img": "img/polymer.png"
+        }
+    ]
+}
