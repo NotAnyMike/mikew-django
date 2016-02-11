@@ -1,4 +1,4 @@
 django<2
-rest_framework
+rest_framework<3.3.2
 ckeditor
 ckeditor_uploader
