@@ -19,9 +19,31 @@ class PersonSerializer(serializers.ModelSerializer):
 		model = Person
 		fields = ('id', 'name', 'email', 'mobile', 'facebook_username', 'twitter_username', 'medium_username', 'github_username', 'img', 'img2x', 'interests', 'mantra',  'techs')
 
-class EntrySerializer(serializers.ModelSerializer):
+class BlogSerializer(serializers.ModelSerializer):
     techs = TechSerializer(many=True, read_only=True)
 
     class Meta:
         model = Entry
         fields = ('id', 'title', 'name_fixed', 'body', 'date', 'techs')
+
+class BlogSummarySerializer(serializers.ModelSerializer):
+    techs = TechSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Entry
+        fields = ('id', 'title', 'name_fixed', 'abstract', 'date', 'techs')
+
+
+class ProjectSerializer(serializers.ModelSerializer):
+    techs = TechSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Entry
+        fields = ('id', 'title', 'name_fixed', 'body', 'date', 'techs', 'cover', 'cover_big')
+
+class ProjectSummarySerializer(serializers.ModelSerializer):
+    techs = TechSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Entry
+        fields = ('id', 'title', 'name_fixed', 'abstract', 'date', 'techs', 'cover', 'cover_big')

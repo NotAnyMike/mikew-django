@@ -17,10 +17,10 @@ admin.autodiscover()
 urlpatterns = patterns('',
 	url(r'^api/', include('app.urls')),
 	url(r'^admin/', admin.site.urls),
-        url(r'^tinymce/', include('tinymce.urls')),
+        url(r'^ckeditor/', include('ckeditor_uploader.urls')),
 	url(r'^$', RedirectView.as_view(url='/index.html')),
 	url(r'^static/(.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT, 'show_indexes' : True}),
 	url(r'^(.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT, 'show_indexes' : True}),
 )
 
-urlpatterns = format_suffix_patterns(urlpatterns)
+urlpatterns = format_suffix_patterns(urlpatterns, allowed=['json'])

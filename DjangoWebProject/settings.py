@@ -136,7 +136,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.admindocs',
     'rest_framework',
-    'tinymce',
+    'ckeditor',
+    'ckeditor_uploader',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -180,14 +181,17 @@ REST_FRAMEWORK = {
 	# or allow read-only access for unauthenticated users.
 	'DEFAULT_PERMISSION_CLASSES': [
 		#'rest_framework.permissions.DjangoModelPermissions',
-	]
+		'rest_framework.permissions.AllowAny',
+	],
+        'DEFAULT_RENDERER_CLASSES': (
+            'rest_framework.renderers.JSONRenderer',
+        )
 }
 
-TINYMCE_DEFAULT_CONFIG = {
-    'theme': "advanced",
-    'cleanup_on_startup': True,
-    'custom_undo_redo_levels': 10,
+CKEDITOR_JQUERY_URL = '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
+CKEDITOR_UPLOAD_PATH = "uploads/"
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
 }
-
-TINYMCE_SPELLCHECKER = True
-TINYMCE_COMPRESSOR = True
