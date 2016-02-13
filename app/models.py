@@ -48,9 +48,10 @@ class Entry(models.Model):
     isBlog = models.BooleanField(null=False, default=True)
     cover = models.CharField(max_length=300, blank=True, null=False, default='')
     cover_big = models.CharField(max_length=300, blank=True, null=False, default='')
+    is_public = models.BooleanField(null=False, default=False)
 
     def get_name_fixed(self):
-        textToReturn = re.sub(r'(\.)|(,)|(;)|(:)','',self.title).lower()
+        textToReturn = re.sub(r'(\.)|(,)|(;)|(:)|(\()|(\))','',self.title).lower()
         return re.sub(r'(\s)','_',textToReturn)
 
     def __str__(self):
