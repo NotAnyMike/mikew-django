@@ -74,21 +74,12 @@
                 <p class="body">
                     {{{body}}}
                 </p>
-            </section></script><script type="text/x-handlebars-template" id="commenterTemplate"><section class="commenter">
-                <span class="title">Do you want to comment?</span>
-                <form action="">
-                    <textarea class="textarea" placeholder="Comment" required></textarea>
-                    <div class="fieldContainer">
-                        <input type="text" class="name" autocomplete="on" placeholder="apodo" required>
-                        <input type="text" class="email" autocomplete="on" pattern='\S+@\S+\.\S+' placeholder="email" required>
-                    </div>
-                    <div class="buttonContainer">
-                        <button type="reset">cancel</button><button>comment</button>
-                    </div>
-                </form>
             </section></script><script type="text/x-handlebars-template" id="commentsContainerTemplate"><section class="commentsContainer">
-                <span class="commentsTitle">Comments</span>
-            </section></script><script type="text/x-handlebars-template" id="commentTemplate"><div class="comment">
+                <!-- span class="commentsTitle">Comments</span -->
+                <div id="disqus_thread"></div>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </section></script><!-- script type="text/x-handlebars-template" id="commentTemplate">
+            <div class="comment">
                     <div class="body">
                         {{body}}
                     </div>
@@ -96,7 +87,8 @@
                         <span class="author">{{author}}</span>
                         <span class="date">{{date}}</span>
                     </div>
-                </div></script><script type="text/x-handlebars-template" id="techUsedTemplate"><figure><img src="{{img}}" alt=""></figure></script><script type="text/x-handlebars-template" id="projectsTemplate"><section class="projectsContainer"></section></script><script type="text/x-handlebars-template" id="projectTemplate"><article class="project">
+                </div>
+        </script --><script type="text/x-handlebars-template" id="techUsedTemplate"><figure><img src="{{img}}" alt=""></figure></script><script type="text/x-handlebars-template" id="projectsTemplate"><section class="projectsContainer"></section></script><script type="text/x-handlebars-template" id="projectTemplate"><article class="project">
                 <span class="title">{{title}}</span>
                 <figure class="figure">
                     <img src="{{cover}}" alt="">
