@@ -37,9 +37,9 @@ def person_list(request, format=None):
 @api_view(['GET'])
 def blog_list(request, format=None):
     if request.method == 'GET':
-            blogs = Entry.objects.filter(isBlog=True)
-            serializer = BlogSummarySerializer(blogs, many=True)
-            return Response(serializer.data)
+        blogs = Entry.objects.filter(isBlog=True, is_public=True)
+        serializer = BlogSummarySerializer(blogs, many=True)
+        return Response(serializer.data)
     else:
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -59,7 +59,7 @@ def blog_detail(request, pk, format=None):
 @api_view(['GET'])
 def project_list(request, format=None):
     if(request.method == 'GET'):
-        projects = Entry.objects.filter(isBlog=False)
+        projects = Entry.objects.filter(isBlog=False, is_public=True)
         serializer = ProjectSummarySerializer(projects, many=True)
         return Response(serializer.data)
     else:

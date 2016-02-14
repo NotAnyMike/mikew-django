@@ -51,7 +51,7 @@
                     <div class="mask"></div>
                     <p>{{name}}</p>
                 </div>
-            </div></script><script type="text/x-handlebars-template" id="breadcrumbsTemplate"><section class="breadcrumbs">{{title}}</section></script><script type="text/x-handlebars-template" id="blogsTemplate"><section class="entriesContainer"></section></script><script type="text/x-handlebars-template" id="blogSummaryTemplate"><article class="article">
+            </div></script><script type="text/x-handlebars-template" id="breadcrumbsTemplate"><section class="breadcrumbs">{{title}}</section></script><script type="text/x-handlebars-template" id="blogsTemplate"><section class="entriesContainer"></section></script><script type="text/x-handlebars-template" id="blogSummaryTemplate"><article class="article" id="blogSummary_{{name_fixed}}">
                 <div class="mainContainer clearfix">
                     <div class="headerContainer">
                         <span class="title">{{title}}</span>
@@ -78,17 +78,7 @@
                 <!-- span class="commentsTitle">Comments</span -->
                 <div id="disqus_thread"></div>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-            </section></script><!-- script type="text/x-handlebars-template" id="commentTemplate">
-            <div class="comment">
-                    <div class="body">
-                        {{body}}
-                    </div>
-                    <div class="data">
-                        <span class="author">{{author}}</span>
-                        <span class="date">{{date}}</span>
-                    </div>
-                </div>
-        </script --><script type="text/x-handlebars-template" id="techUsedTemplate"><figure><img src="{{img}}" alt=""></figure></script><script type="text/x-handlebars-template" id="projectsTemplate"><section class="projectsContainer"></section></script><script type="text/x-handlebars-template" id="projectTemplate"><article class="project">
+            </section></script><script type="text/x-handlebars-template" id="techUsedTemplate"><figure><img src="{{img}}" alt=""></figure></script><script type="text/x-handlebars-template" id="projectsTemplate"><section class="projectsContainer"></section></script><script type="text/x-handlebars-template" id="projectTemplate"><article class="project">
                 <span class="title">{{title}}</span>
                 <figure class="figure">
                     <img src="{{cover}}" alt="">
@@ -101,7 +91,7 @@
                 </div>
                 <span class="date">{{date}}</span>
                 <p class="body">{{{body}}}</p>
-            </article></script><script type="text/x-handlebars-template" id="projectSummaryTemplate"><article class="project">
+            </article></script><script type="text/x-handlebars-template" id="projectSummaryTemplate"><article class="project" id="projectSummary_{{name_fixed}}">
                 <div class="headerContainer clearfix">
                     <figure class="figure">
                         <img src="{{img}}" alt="">
