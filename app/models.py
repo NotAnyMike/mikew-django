@@ -53,6 +53,10 @@ class Entry(models.Model):
     def get_name_fixed(self):
         textToReturn = re.sub(r'(\.)|(,)|(;)|(:)|(\()|(\))','',self.title).lower()
         return re.sub(r'(\s)','_',textToReturn)
+    
+    def removeSpaces(self, string):
+        textToReturn = string.replace('&nbsp;',' ')
+        return textToReturn
 
     def __str__(self):
         toReturn = ""
@@ -63,5 +67,7 @@ class Entry(models.Model):
 
     def save(self, *args, **kwargs):
         self.name_fixed = self.get_name_fixed()
+        self.body = self.removeSpaces(self.body)
+        self.abstract = self.removeSpaces(self.abstract)
         super(Entry, self).save(*args, **kwargs)
 

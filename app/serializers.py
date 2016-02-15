@@ -21,6 +21,7 @@ class PersonSerializer(serializers.ModelSerializer):
 
 class BlogSerializer(serializers.ModelSerializer):
     techs = TechSerializer(many=True, read_only=True)
+    date = serializers.DateTimeField(format='%B %d, %Y')
 
     class Meta:
         model = Entry
@@ -28,6 +29,7 @@ class BlogSerializer(serializers.ModelSerializer):
 
 class BlogSummarySerializer(serializers.ModelSerializer):
     techs = TechSerializer(many=True, read_only=True)
+    date = serializers.DateTimeField(format='%B %d, %Y')
 
     class Meta:
         model = Entry
@@ -36,6 +38,7 @@ class BlogSummarySerializer(serializers.ModelSerializer):
 
 class ProjectSerializer(serializers.ModelSerializer):
     techs = TechSerializer(many=True, read_only=True)
+    date = serializers.DateTimeField(format='%B %d, %Y')
 
     class Meta:
         model = Entry
@@ -43,6 +46,7 @@ class ProjectSerializer(serializers.ModelSerializer):
 
 class ProjectSummarySerializer(serializers.ModelSerializer):
     techs = TechSerializer(many=True, read_only=True)
+    date = serializers.DateTimeField(format='%B %d, %Y')
 
     class Meta:
         model = Entry

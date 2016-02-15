@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><title>Mike.W</title><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta charset="UTF-8"><link rel="stylesheet" type="text/css" href="./css/normalize.css"><link rel="stylesheet" type="text/css" href="./css/font.css"><link rel="stylesheet" type="text/css" href="./css/app.css"></head><body><nav class="nav"><ul><li class="mike"><a href="#Mike">Mike</a></li><li class="blog"><a href="#Blog">Blog</a></li><li class="stories"><a href="#Projects">Projects</a></li></ul></nav><header class="header"><div class="headerContainer"></div></header><div class="wrapper"><section class="aboutMe"><div class="myInfo"><figure class="photoContainer"><img src="img/mike.png"></figure><article class="myInfoMainContainer"><label>Mike Woodcock</label><label class="mail"><span class="sendEmail"></span> <a href="mailto:mikewoodcockc@gmail.com" target="_blank">mikewoodcockc@gmail.com</a></label><label class="years">22 years old colombian guy</label><div class="socialButtons"><a class="facebook"></a> <a class="twitter"></a> <a class="medium"></a> <a class="github"></a> <span class="whatsapp"></span></div><a target="_blank" class="socialButtonsContainer">hos</a></article></div></section></div><footer class="footer">&#xA9; 2016 Mike Woodcock</footer><script type="text/x-handlebars-template" id="myInfoTemplate"><section class="aboutMe">
+<!DOCTYPE html><html lang="en"><head><title>Mike.W</title><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><meta charset="UTF-8"><link rel="stylesheet" type="text/css" href="./css/normalize.css"><link rel="stylesheet" type="text/css" href="./css/font.css"><link rel="stylesheet" type="text/css" href="./css/app.css"></head><body><nav class="nav"><ul><li class="mike"><a href="#Mike">Mike</a></li><li class="blog"><a href="#Blog">Blog</a></li><li class="stories"><a href="#Projects">Projects</a></li></ul></nav><header class="header"><div class="headerContainer"></div></header><div class="wrapper"><section class="aboutMe"><div class="myInfo"><figure class="photoContainer"><img src="img/mike.png"></figure><article class="myInfoMainContainer"><label>Mike Woodcock</label><label class="mail"><span class="sendEmail"></span> <a href="mailto:mikewoodcockc@gmail.com" target="_blank">mikewoodcockc@gmail.com</a></label><label class="years">22 years old, colombian guy</label><div class="socialButtons"><a class="facebook"></a> <a class="twitter"></a> <a class="medium"></a> <a class="github"></a> <span class="whatsapp"></span></div><a target="_blank" class="socialButtonsContainer">hos</a></article></div></section></div><footer class="footer">&#xA9; 2016 Mike Woodcock</footer><script type="text/x-handlebars-template" id="myInfoTemplate"><section class="aboutMe">
                 <div class="myInfo">
                     <figure class="photoContainer"><img src="{{img}}"></figure>
                     <article class="myInfoMainContainer">
@@ -8,7 +8,7 @@
                             <a href="mailto:{{email}}" target="_blank">{{email}}</a>
                         </label>
                         <label class="years">
-                            22 years old colombian guy
+                            22 years old, colombian guy
                         </label>
                         <div class="socialButtons">
                             <a href="https://www.facebook.com/{{facebook_username}}"class="facebook" target="_blank"></a>
@@ -79,7 +79,6 @@
                 <div id="disqus_thread"></div>
                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
             </section></script><script type="text/x-handlebars-template" id="techUsedTemplate"><figure><img src="{{img}}" alt=""></figure></script><script type="text/x-handlebars-template" id="projectsTemplate"><section class="projectsContainer"></section></script><script type="text/x-handlebars-template" id="projectTemplate"><article class="project">
-                <span class="title">{{title}}</span>
                 <figure class="figure">
                     <img src="{{cover}}" alt="">
                 </figure>
@@ -89,17 +88,18 @@
                         <div class="arrow right"></div>
                     </div>
                 </div>
-                <span class="date">{{date}}</span>
-                <p class="body">{{{body}}}</p>
+                <span class="title">{{ title }}</span>
+                <span class="date">{{ date }}</span>
+                <div class="body">{{{ body }}}</div>
             </article></script><script type="text/x-handlebars-template" id="projectSummaryTemplate"><article class="project" id="projectSummary_{{name_fixed}}">
                 <div class="headerContainer clearfix">
                     <figure class="figure">
                         <img src="{{img}}" alt="">
                     </figure>
-                    <span class="title">{{title}}</span>
-                    <p class="body">{{abstract}}</p>
+                    <span class="title">{{ title }}</span>
+                    <p class="body">{{ abstract }}</p>
                 </div>
-                <p class="body">{{abstract}}</p>
-                <span class="date">{{date}}</span>
+                <p class="body">{{ abstract }}</p>
+                <span class="date">{{ date }}</span>
             </article></script><script type="text/javascript" src="js/retina.min.js"></script><script src="js/app.js"></script><!--script type="text/javascript" src="jquery-2.1.4.min.js"></script>
         <!-- script type="text/javascript" src="fixednavbar.js"></script --></body></html>
